@@ -279,7 +279,7 @@ function selesaiTes() {
     });
 
     // Estimasi IQ berdasarkan distribusi normal
-    let iq = Math.round(90 + ((skor / 100) * 40));  // Rentang 90–130
+    let iq = Math.round(70 + ((skor / 100) * 60)); // now spans 70–130
 
     const hasil = `Nama: ${nama}\nTotal Poin: ${skor} / 100\nPerkiraan IQ: ${iq}\nTanggal Tes: ${new Date().toLocaleString()}`;
     const blob = new Blob([hasil], { type: "text/plain;charset=utf-8" });
